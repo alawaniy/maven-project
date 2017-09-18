@@ -29,13 +29,15 @@ http://www.mulesoft.org/schema/mule/jms http://www.mulesoft.org/schema/mule/jms/
 		<set-payload value="#[&quot;Hello Mule&quot;]" doc:name="Set Payload" />
 	</flow>
 
-	<flow name="maven-project-trainingFlow">
+	<flow name="retrieveFlights">
 		<http:listener config-ref="HTTP_Listener_Configuration" path="/flights" doc:name="HTTP" />
 		<db:select config-ref="Derby_Configuration" doc:name="Database">
 			<db:parameterized-query><![CDATA[select * from Flights]]></db:parameterized-query>
 		</db:select>
 		<json:object-to-json-transformer doc:name="Object to JSON" />
-		<logger level="INFO" message="#[payload]"></logger>
+		
+		<logger level="INFO" message="#[payload]" doc:name="Logger"></logger>
+     <!--    <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>  -->
 		<jms:outbound-endpoint queue="flights" connector-ref="Active_MQ" doc:name="JMS" />
 	</flow>
 

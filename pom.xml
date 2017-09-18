@@ -135,25 +135,25 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-            <groupId>org.mule.modules</groupId>
-            <artifactId>mule-module-db</artifactId>
-            <version>${mule.version}</version>
-            <scope>provided</scope>
-        </dependency>
-    <dependency>
-            <groupId>org.mule.modules</groupId>
-            <artifactId>mule-module-json</artifactId>
-            <version>${mule.version}</version>
-            <scope>provided</scope>
-        </dependency>
-    <dependency>
-            <groupId>org.mule.transports</groupId>
-            <artifactId>mule-transport-jms</artifactId>
-            <version>${mule.version}</version>
-            <scope>provided</scope>
-        </dependency>
-        
-          <!-- non-mule dependencies -->
+			<groupId>org.mule.modules</groupId>
+			<artifactId>mule-module-db</artifactId>
+			<version>${mule.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mule.modules</groupId>
+			<artifactId>mule-module-json</artifactId>
+			<version>${mule.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mule.transports</groupId>
+			<artifactId>mule-transport-jms</artifactId>
+			<version>${mule.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- non-mule dependencies -->
 		<dependency>
 			<groupId>org.apache.derby</groupId>
 			<artifactId>derby</artifactId>
@@ -174,8 +174,8 @@
 			<artifactId>activemq-client</artifactId>
 			<version>${activemq.version}</version>
 		</dependency>
-	
-    </dependencies>
+
+	</dependencies>
 	<repositories>
 		<repository>
 			<id>Central</id>
