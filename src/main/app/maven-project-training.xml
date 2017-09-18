@@ -26,6 +26,7 @@ http://www.mulesoft.org/schema/mule/jms http://www.mulesoft.org/schema/mule/jms/
             <db:parameterized-query><![CDATA[select * from Flights]]></db:parameterized-query>
         </db:select>
         <json:object-to-json-transformer doc:name="Object to JSON"/>
+        <logger level="INFO" message="#[payload]"></logger>
         <jms:outbound-endpoint queue="flights" connector-ref="Active_MQ" doc:name="JMS"/>
     </flow>
     <flow name="maven-project-trainingFlow1">
