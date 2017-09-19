@@ -38,7 +38,8 @@
 					<password>Lawaniya3$12</password>
 					<workerType>Micro</workerType>
 					<redeploy>true</redeploy>
-					<environment>Production</environment>
+			<!--  	<environment>Production</environment> -->
+					<environment>Sandbox</environment>
 				</configuration>
 				<executions>
 					<execution>
