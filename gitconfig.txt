@@ -37,5 +37,5 @@ Feature1 changs in Fast forward merge.
 
 change1
 change2
-
+change3
 
