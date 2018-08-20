@@ -33,3 +33,6 @@ Added for MAster branch , ist time
 
 Adding to check , not to set explicit fast forward.
 
+Feature1 changs in Fast forward merge.
+
+
