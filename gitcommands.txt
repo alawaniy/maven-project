@@ -24,3 +24,5 @@ Added for feature 1 -2nd time
 
 Added for MAster branch , ist time
 
+Added today to check the fast forward case.
+
