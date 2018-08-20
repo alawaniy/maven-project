@@ -31,3 +31,5 @@ Added for feature 1 -2nd time
 
 Added for MAster branch , ist time
 
+Adding to check , not to set explicit fast forward.
+
